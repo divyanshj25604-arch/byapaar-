@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(6, 17, 69, 0.7),rgba(17, 21, 90, 0.7)),url(assets/financebg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* basic nav and logo styling */
+nav {
+    display: flex;
+    background-color: rgb(4, 18, 84);
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+}
+
+.brand-img {
+    height: 48px;
+    width: auto;
+}
+
+/* small responsive tweak */
+@media (max-width: 700px) {
+    .brand-img { height: 40px; }
+    nav { padding: 12px; }
+}
+
+.navlink{
+    flex: 1;
+    text-align: right;
+}
+
+.navlink ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navlink ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+}
+
+.navlink ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #7ABC00;
+    display: block;
+    margin: auto;
+}
+
+.navlink ul li:hover:after{
+    transition: 0.2s;
+    width: 100%;
+}
+
+.textbox{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.textbox h1{
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+}
+
+.textbox p{
+    margin: 10px 0px 40px ;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.btn{
+    display: inline-block;
+    text-align: center;
+    padding: 12px 34px;
+    font-size: 13px;
+    background :transparent;
+    color: #fff;
+    border: 1px solid ;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn:hover{
+    background-color: #7ABC00;
+    transition: 0.5s;
+    border: 1px solid #7ABC00;
+}
